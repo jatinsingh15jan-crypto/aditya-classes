@@ -47,9 +47,11 @@ nav a:hover{color:var(--orange)}
 .cream{background:var(--light)}
 
 .about{display:flex;flex-wrap:wrap;gap:34px;align-items:center}
-.photo{flex:1 1 240px;height:280px;border-radius:16px;background:linear-gradient(135deg,var(--maroon),var(--orange));display:flex;align-items:center;justify-content:center;font-size:5rem;color:#fff}
+.photo{flex:1 1 240px;max-width:340px;height:420px;border-radius:16px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 6px 20px #0003;margin:auto}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .about .txt{flex:2 1 320px}
-.about h3{font-size:1.6rem;color:var(--maroon)}
+.about h3{font-size:1.7rem;color:var(--maroon)}
+.about p{margin-top:10px}
 .tags span{display:inline-block;background:#f3e8ff;color:var(--purple);padding:4px 12px;border-radius:14px;margin:10px 6px 0 0;font-size:.85rem}
 
 .quote{font-style:italic}
@@ -64,7 +66,7 @@ input,select{width:100%;padding:12px;margin-bottom:14px;border:1px solid #d6cfcf
 .form-box .btn{width:100%}
 
 .addr{text-align:center;font-size:1.05rem}
-.addr .btn{margin-top:14px}
+.addr .btn{margin:14px 6px 0}
 
 footer{background:var(--dark);color:#d9cfcf;text-align:center;padding:30px 0;font-size:.9rem}
 footer a{color:var(--gold)}
@@ -95,7 +97,7 @@ footer a{color:var(--gold)}
   <h1>Maths, Physics, Science<br>& SST Made Simple</h1>
   <p>Concept-based teaching by Shiv Kumar (M.Tech) for Class 9 to 12. Small batches, regular tests and personal attention for every student.</p>
   <a href="#enquiry" class="btn">Book Free Demo Class</a>
-  <a href="#subjects" class="btn alt">View Subjects</a>
+  <a href="tel:+917982538170" class="btn alt">📞 Call Now</a>
  </div>
 </section>
 
@@ -151,11 +153,12 @@ footer a{color:var(--gold)}
 
 <section id="about" class="cream">
  <div class="wrap about">
-  <div class="photo">👨‍🏫</div>
+  <div class="photo"><img src="teacher.jpg" alt="Shiv Kumar, Aditya Classes"></div>
   <div class="txt">
    <h3>Shiv Kumar</h3>
    <p><b>Founder & Lead Teacher, Aditya Classes</b></p>
-   <p style="margin-top:10px">An M.Tech qualified teacher who believes every student can score well when concepts are clear. The goal is to make Maths, Physics, Science and SST simple and enjoyable. (Edit this paragraph with your own words.)</p>
+   <p>With an M.Tech background, Shiv Kumar brings strong technical knowledge and a logical way of thinking into every lesson. He is calm, approachable and patient, and students feel comfortable asking any doubt, however small. He believes that marks follow understanding, so he explains the "why" behind every formula and step instead of pushing students to memorise.</p>
+   <p>His teaching style is simple and step by step. He connects difficult topics in Maths and Physics to everyday examples, solves problems on the board together with students, and keeps revisiting basics until they are clear. Regular tests, honest feedback and personal attention help each student improve at their own pace and build real confidence for the board exams.</p>
    <div class="tags"><span>M.Tech</span><span>Maths</span><span>Physics</span><span>Science</span><span>SST</span><span>Class 9-12</span></div>
   </div>
  </div>
@@ -181,14 +184,14 @@ footer a{color:var(--gold)}
   <details><summary>Are classes online or offline?</summary><p>All classes are offline, at our centre in Sector 3, Rohini.</p></details>
   <details><summary>Which classes and subjects do you teach?</summary><p>Maths, Science and SST for Class 9 and 10, and Maths and Physics for Class 11 and 12.</p></details>
   <details><summary>How many students are in a batch?</summary><p>We keep batches small so every student gets personal attention.</p></details>
-  <details><summary>What are the class timings?</summary><p>Please call or WhatsApp us for current batch timings.</p></details>
+  <details><summary>What are the class timings?</summary><p>Please call or WhatsApp us on 79825 38170 for current batch timings.</p></details>
  </div>
 </section>
 
 <section id="enquiry">
  <div class="wrap">
   <h2>Book Your Free Demo Class</h2>
-  <p class="sub">Fill in the details – it opens WhatsApp with your message</p>
+  <p class="sub">Fill in the details – your request goes straight to our WhatsApp</p>
   <div class="form-box">
    <input id="name" placeholder="Student / Parent name">
    <input id="phone" type="tel" placeholder="Phone number">
@@ -200,7 +203,7 @@ footer a{color:var(--gold)}
     <option value="">Select subject</option>
     <option>Maths</option><option>Physics</option><option>Science</option><option>SST</option><option>Multiple subjects</option>
    </select>
-   <button class="btn" onclick="sendEnquiry()">Send on WhatsApp</button>
+   <button class="btn" onclick="sendEnquiry()">Book Demo on WhatsApp</button>
   </div>
  </div>
 </section>
@@ -210,21 +213,22 @@ footer a{color:var(--gold)}
   <h2>Visit Us</h2>
   <p class="sub">Aditya Classes</p>
   <p>📍 B-7218, Sector 3, Rohini, Delhi</p>
-  <p>📞 <a href="tel:+91XXXXXXXXXX"><b>+91 XXXXXXXXXX</b></a></p>
+  <p>📞 <a href="tel:+917982538170"><b>+91 79825 38170</b></a></p>
   <a class="btn" href="https://www.google.com/maps/search/?api=1&query=B-7218+Sector+3+Rohini+Delhi" target="_blank">Open in Google Maps</a>
+  <a class="btn" href="https://wa.me/917982538170" target="_blank">Chat on WhatsApp</a>
  </div>
 </section>
 
 <footer>
  <div class="wrap">
   <p><b>Aditya Classes</b> – Maths • Physics • Science • SST</p>
-  <p>📍 B-7218, Sector 3, Rohini, Delhi &nbsp;|&nbsp; 📞 <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></p>
+  <p>📍 B-7218, Sector 3, Rohini, Delhi &nbsp;|&nbsp; 📞 <a href="tel:+917982538170">+91 79825 38170</a></p>
   <p style="margin-top:8px"><a href="https://www.instagram.com/adityaclasses6" target="_blank">Instagram: @adityaclasses6</a></p>
   <p style="margin-top:8px">© 2026 Aditya Classes. All rights reserved.</p>
  </div>
 </footer>
 
-<a class="wa" href="https://wa.me/91XXXXXXXXXX" target="_blank" aria-label="WhatsApp">💬</a>
+<a class="wa" href="https://wa.me/917982538170" target="_blank" aria-label="WhatsApp">💬</a>
 
 <script>
 function sendEnquiry(){
@@ -236,7 +240,7 @@ function sendEnquiry(){
   var msg='Hello! I want to book a free demo class at Aditya Classes.%0AName: '+encodeURIComponent(n)+
           '%0APhone: '+encodeURIComponent(p)+'%0AClass: '+encodeURIComponent(c)+
           '%0ASubject: '+encodeURIComponent(s);
-  window.open('https://wa.me/91XXXXXXXXXX?text='+msg,'_blank');
+  window.open('https://wa.me/917982538170?text='+msg,'_blank');
 }
 </script>
 </body>
